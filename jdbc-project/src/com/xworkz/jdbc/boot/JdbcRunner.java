@@ -22,22 +22,22 @@ public class JdbcRunner {
 		System.out.println("Done");
 		
 		
-		Class.forName("com.mysql.cj.jdbc.Driver");
-		System.out.println("Driver loaded Succesfully");
-
-		String url = "jdbc:mysql://localhost:3306/jdbcdemo";
-		String userName = "root";
-		String password = "system";
-		String query = "select * from work";
-		Connection con = DriverManager.getConnection(url, userName, password);
-		java.sql.Statement st = con.createStatement();
-		ResultSet set = st.executeQuery(query);
-		
-		set.next();
-		
-		System.out.println(set.getInt(1));
-		System.out.println(set.getString(2));
-		System.out.println(set.getString(3));
+//		Class.forName("com.mysql.cj.jdbc.Driver");
+//		System.out.println("Driver loaded Succesfully");
+//
+//		String url = "jdbc:mysql://localhost:3306/jdbcdemo";
+//		String userName = "root";
+//		String password = "system";
+//		String query = "select * from work";
+//		Connection con = DriverManager.getConnection(url, userName, password);
+//		java.sql.Statement st = con.createStatement();
+//		ResultSet set = st.executeQuery(query);
+//		
+//		set.next();
+//		
+//		System.out.println(set.getInt(1));
+//		System.out.println(set.getString(2));
+//		System.out.println(set.getString(3));
 		
 
 	}
