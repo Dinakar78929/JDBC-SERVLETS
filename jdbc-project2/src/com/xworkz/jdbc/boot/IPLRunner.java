@@ -1,6 +1,7 @@
 package com.xworkz.jdbc.boot;
 
 import java.sql.Connection;
+//import com.xworkz.jdbc.connection.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -15,7 +16,7 @@ public class IPLRunner {
 		String password = "system";
 		// Connection connection=DriverManager.getConnection(url,userName,password);
 
-		try (Connection connection = DriverManager.getConnection(url, userName, password);) {
+		try (Connection connection = DriverManager.getConnection(url , userName, password);) {
 
 			System.out.println("Connection build succesfully");
 			Statement statement = connection.createStatement();
