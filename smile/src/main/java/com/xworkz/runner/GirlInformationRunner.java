@@ -22,7 +22,7 @@ public class GirlInformationRunner {
 		GirlInformationRepository grepo = new GirlInformationRepository();
 
 		GirlInformationService service = new GirlInformationService(grepo);
-		// service.validateAndSave(girl);
+		 service.validateAndSave(girl);
 //
 //		//service.findById(2);
 //		List<GirlInformationEntity> list = service.findAll();
@@ -47,7 +47,7 @@ public class GirlInformationRunner {
 //			System.out.println("find by location row:" + location);
 //		}
 
-		System.out.println("Deleted" + " " + service.deleteByName("Alia"));
+		//System.out.println("Deleted" + " " + service.deleteByName("Alia"));
 
 	}
 
